@@ -1,0 +1,9 @@
+@interface MyClass () 
+
+/*
+We redeclare the property in the .m file but this time with readwrite access.
+When accessed from inside an instance of this class you can set the value of the
+property, when accessed from outside you can only read its value.
+*/
+@property (readwrite, nonatomic, retain) Type *aProperty;
+@end

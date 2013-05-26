@@ -1,0 +1,11 @@
+name: Benjamin Loulier - @benlodotcom
+exclude: ['assets/scss', 'config.rb', 'Gemfile', 'Gemfile.lock']
+permalink: /posts/:title/
+lsi: false
+markdown: redcarpet
+pygments: true
+assets:
+  compress:
+    js:   uglifier
+    css:  sass
+  gzip: false

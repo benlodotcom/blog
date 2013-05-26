@@ -1,0 +1,25 @@
+/*We declare the category*/
+@interface  MyClass (private)
+
+@property (nonatomic, retain) Type *aPrivateProperty; 
+- (void)aPrivateMethod;
+
+@end
+
+/*We implement it*/    
+@implementation MyClass (private)
+
+/*We cannot use synthesize in the category :-(*/
+@dynamic aPrivateProperty;
+- (Type *)aPrivateProperty {
+    //Getter code
+}
+
+- (void)setAPrivateProperty {
+    //Setter code
+}
+    
+- (void)aPrivateMethod {        
+    //Some code there
+}
+@end

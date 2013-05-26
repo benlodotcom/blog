@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Comfortaa' rel='stylesheet' type='text/css'>
+  {% stylesheet main %}
+
+</head>
+<body>
+
+  <header id="site-top">
+    <h1>[self Ben]</h1>
+    <nav class="menu">
+      <ul>
+        <li {% if page.url == "/index.html" %}class="current"{% endif %}><a href="/"><i class="icon-comment icon-medium"></i> Blog</a></li>
+        <li {% if page.url == "/about/index.html" %}class="current"{% endif %}><a href="/about"><i class="icon-user icon-medium"></i> About</a></li>
+        <li><a href="http://www.twitter.com/benlodotcom"><i class="icon-twitter icon-medium"></i> <span class="show-on-wide-screens">@benlodotcom</span></a></li>
+        <li><a href="http://www.github.com/benlodotcom"><i class="icon-github icon-medium"></i> <span class="show-on-wide-screens">Github</span></a></li>
+        <li><a href='javascript:window.location="mail"+"to:"+"benjaminloulier.com"+"@"+"gmail"+"."+"com";' onmouseover="window.status=&quot;mail&quot;+&quot;to:&quot;+&quot;benjaminloulier.com&quot;+&quot;@&quot;+&quot;gmail&quot;+&quot;.&quot;+&quot;com&quot;; return true;" onmouseout="window.status=&quot;&quot;;return true;"><i class="icon-envelope icon-medium"></i> <span class="show-on-wide-screens">Email</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="main">
+    {{ content }}
+  </div>
+  <div id='layout_footer'></div>
+</div>
+
+<footer>
+ © Benjamin Loulier, benlodotcom {at} gmail {dot} com, powered by rails, heroku and another bunch of geeky stuff :)
+</footer>
+
+<script>
+var _gaq=[['_setAccount','UA-15780922-1'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script type="text/javascript">
+var GoSquared = {};
+GoSquared.acct = "GSN-802502-W";
+(function(w){
+  function gs(){
+    w._gstc_lt = +new Date;
+    var d = document, g = d.createElement("script");
+    g.type = "text/javascript";
+    g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+    var s = d.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(g, s);
+  }
+  w.addEventListener ?
+  w.addEventListener("load", gs, false) :
+  w.attachEvent("onload", gs);
+})(window);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+/*We declare the class extension*/
+@interface  MyClass () 
+
+@property (nonatomic, retain) Type *aPrivateProperty; 
+- (void)aPrivateMethod;
+
+@end
+
+/*
+We can use the main implementation block to implement our properties
+and methods declared in the class extension.
+*/
+@implementation MyClass
+
+/*Therefore we can use synthesize ;-)*/
+@synthesize aPrivateProperty;
+
+- (void)aPrivateMethod {        
+    //Some code there
+}
+
+@end
