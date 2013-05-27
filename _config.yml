@@ -1,4 +1,7 @@
 name: Benjamin Loulier - @benlodotcom
+description: A description for your blog
+url: http://www.benjaminloulier.com
+
 exclude: ['assets/scss', 'config.rb', 'Gemfile', 'Gemfile.lock']
 permalink: /posts/:title/
 lsi: false
