@@ -1,5 +1,5 @@
 name: Benjamin Loulier - @benlodotcom
-description: A description for your blog
+description: My personal blog on iOS and other things that goes through my mind.
 url: http://www.benjaminloulier.com
 
 exclude: ['assets/scss', 'config.rb', 'Gemfile', 'Gemfile.lock']
