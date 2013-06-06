@@ -1,8 +1,0 @@
-@interface MyClass : NSObject {
-    //iVars declaration
-}
-
-/*We declare the property as readonly in the header*/
-@property (readonly, nonatomic, retain) Type *aProperty;
- 
-@end

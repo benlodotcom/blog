@@ -1,3 +1,4 @@
 _site
 .sass-cache
+_gist_cache
 _jekyll_s3.yml
